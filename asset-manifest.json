@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/react-clone/static/js/main.85c15d2c.js",
+    "main.js": "/react-clone/static/js/main.0e6fb2ba.js",
     "static/media/react-logo.webp": "/react-clone/static/media/react-logo.2a0cac33f155e4a27216.webp",
     "index.html": "/react-clone/index.html",
-    "main.85c15d2c.js.map": "/react-clone/static/js/main.85c15d2c.js.map"
+    "main.0e6fb2ba.js.map": "/react-clone/static/js/main.0e6fb2ba.js.map"
   },
   "entrypoints": [
-    "static/js/main.85c15d2c.js"
+    "static/js/main.0e6fb2ba.js"
   ]
 }
