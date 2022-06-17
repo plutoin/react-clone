@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
@@ -32,14 +32,14 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <BrowserRouter>
+      <HashRouter>
         <Nav />
         <Route path="/" exact component={Main} />
         <Route path="/docs" exact component={Docs} />
         <Route path="/tutorial" exact component={Tutorial} />
         <Route path="/blog" exact component={Blog} />
         <Route path="/community" exact component={Community} />
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
