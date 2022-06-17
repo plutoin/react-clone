@@ -119,7 +119,7 @@ const Strong = styled.strong`
   font-weight: bold;
 `;
 
-const TxtLink = styled(Link)`
+const TxtLink = styled.a`
   background-color: #bbeffd4d;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   &:hover {
@@ -212,8 +212,8 @@ function InfoSection() {
           작성하지 않고도 React의 새로운 기능을 이용해 개발할 수 있습니다.
         </InfoText>
         <InfoText>
-          React는 Node 서버에서 렌더링을 할 수도 있고,
-          <TxtLink to="https://reactnative.dev/"> React Native</TxtLink>를
+          React는 Node 서버에서 렌더링을 할 수도 있고,{" "}
+          <TxtLink href="https://reactnative.dev/"> React Native</TxtLink>를
           이용하면 모바일 앱도 만들 수 있습니다.
         </InfoText>
       </InfoLi>
@@ -235,7 +235,7 @@ function ExSection() {
       <ComponentText>
         <Strong>React를 사용하기 위해서 JSX가 꼭 필요한 것은 아닙니다. </Strong>
         JSX를 컴파일한 JavaScript 코드를 확인하려면{" "}
-        <TxtLink to="https://babeljs.io/repl/#?presets=react&code_lz=MYewdgzgLgBApgGzgWzmWBeGAeAFgRgD4AJRBEAGhgHcQAnBAEwEJsB6AwgbgChRJY_KAEMAlmDh0YWRiGABXVOgB0AczhQAokiVQAQgE8AkowAUAcjogQUcwEpeAJTjDgUACIB5ALLK6aRklTRBQ0KCohMQk6Bx4gA">
+        <TxtLink href="https://babeljs.io/repl/#?presets=react&code_lz=MYewdgzgLgBApgGzgWzmWBeGAeAFgRgD4AJRBEAGhgHcQAnBAEwEJsB6AwgbgChRJY_KAEMAlmDh0YWRiGABXVOgB0AczhQAokiVQAQgE8AkowAUAcjogQUcwEpeAJTjDgUACIB5ALLK6aRklTRBQ0KCohMQk6Bx4gA">
           Babel REPL
         </TxtLink>
         을 이용해보세요.
