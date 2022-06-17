@@ -1,3 +1,9 @@
+import CommonContents from "./CommonContents";
+
+const docs = {
+  title: "시작하기"
+};
+
 export default function Docs() {
-  return <h1>Docs</h1>
+  return <CommonContents title={docs.title} />;
 }

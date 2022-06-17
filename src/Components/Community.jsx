@@ -1,3 +1,9 @@
+import CommonContents from "./CommonContents";
+
+const community = {
+  title: "Where To Get Support"
+};
+
 export default function Community() {
-  return <h1>Community</h1>
+  return <CommonContents title={community.title} />;
 }

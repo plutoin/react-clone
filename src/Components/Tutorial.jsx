@@ -1,3 +1,9 @@
+import CommonContents from "./CommonContents";
+
+const tutorial = {
+  title: "자습서: React 시작하기"
+};
+
 export default function Tutorial() {
-  return <h1>Tutorial</h1>
+  return <CommonContents title={tutorial.title} />;
 }

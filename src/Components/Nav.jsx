@@ -1,19 +1,21 @@
-import styled from "styled-components"
-import { Link } from "react-router-dom"
-import reactLogo from "../assets/react-logo.webp"
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import reactLogo from "../assets/react-logo.webp";
 
 const Header = styled.header`
   position: fixed;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 20px 0;
+  height: 60px;
   background-color: #20232a;
-  color: white;
-`
+  color: rgb(137, 139, 145);
+`;
 
 const StyledLink = styled(Link)`
-  font-size: 20px;
+  padding: 20px 0;
+  font-size: 18px;
   font-weight: 200;
   margin-right: 30px;
   line-height: 1.6;
@@ -32,7 +34,7 @@ const StyledLink = styled(Link)`
     background-image: url(${reactLogo});
     background-size: contain;
   }
-`
+`;
 
 export default function Nav() {
   return (
@@ -43,5 +45,5 @@ export default function Nav() {
       <StyledLink to="/blog">블로그</StyledLink>
       <StyledLink to="/community">커뮤니티</StyledLink>
     </Header>
-  )
+  );
 }

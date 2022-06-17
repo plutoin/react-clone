@@ -1,15 +1,15 @@
-import React from "react"
-import { BrowserRouter, Route } from "react-router-dom"
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 
-import { createGlobalStyle } from "styled-components"
-import reset from "styled-reset"
+import { createGlobalStyle } from "styled-components";
+import reset from "styled-reset";
 
-import Nav from "./Components/Nav"
-import Main from "./Components/Main"
-import Docs from "./Components/Docs"
-import Tutorial from "./Components/Tutorial"
-import Blog from "./Components/Blog"
-import Community from "./Components/Community"
+import Nav from "./Components/Nav";
+import Main from "./Components/Main";
+import Docs from "./Components/Docs";
+import Tutorial from "./Components/Tutorial";
+import Blog from "./Components/Blog";
+import Community from "./Components/Community";
 
 const GlobalStyle = createGlobalStyle`
   ${reset};
@@ -26,11 +26,11 @@ const GlobalStyle = createGlobalStyle`
  * {
   box-sizing: border-box;
   }
-`
+`;
 
 function App() {
   return (
-    <React.Fragment>
+    <>
       <GlobalStyle />
       <BrowserRouter>
         <Nav />
@@ -40,8 +40,8 @@ function App() {
         <Route path="/blog" exact component={Blog} />
         <Route path="/community" exact component={Community} />
       </BrowserRouter>
-    </React.Fragment>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;

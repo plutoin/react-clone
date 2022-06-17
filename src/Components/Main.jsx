@@ -1,32 +1,33 @@
-import styled from "styled-components"
-import { Link } from "react-router-dom"
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-import blueArrow from "../assets/arrow-b.png"
-import whiteArrow from "../assets/arrow-w.png"
-import footerLogo from "../assets/footer-logo.png"
+import blueArrow from "../assets/arrow-b.png";
+import whiteArrow from "../assets/arrow-w.png";
+import footerLogo from "../assets/footer-logo.png";
 
 const CommonStyle = styled.section`
   margin: 0 80px;
   padding-top: 90px;
-`
+`;
+
 const DivStyle = styled.div`
   text-align: center;
   padding: 120px 0 95px;
   background-color: #282c34;
   color: white;
-`
+`;
 
 const MainTitleH1 = styled.h1`
   font-size: 60px;
   font-weight: 700;
   color: #61dafb;
-`
+`;
 
 const MainText = styled.p`
   margin: 20px 0 65px 0;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 200;
-`
+`;
 
 const BlueButton = styled.a`
   padding: 15px 25px;
@@ -38,7 +39,7 @@ const BlueButton = styled.a`
     background-color: white;
     transition: 0.2s;
   }
-`
+`;
 
 const TxtButton = styled.a`
   padding: 15px 25px;
@@ -61,14 +62,14 @@ const TxtButton = styled.a`
   &:hover::after {
     background-image: url(${whiteArrow});
   }
-`
+`;
 
 const InfoUl = styled.ul`
   display: flex;
   padding-bottom: 40px;
   overflow: auto;
   border-bottom: 1px solid #ececec;
-`
+`;
 
 const InfoLi = styled.li`
   width: 380px;
@@ -76,7 +77,7 @@ const InfoLi = styled.li`
   font-size: 20px;
   font-weight: 200;
   color: #6d6d6d;
-`
+`;
 
 const InfoText = styled.p`
   font-size: 17px;
@@ -89,13 +90,14 @@ const InfoText = styled.p`
   &:last-child {
     margin-top: 25px;
   }
-`
+`;
 
 const StyeldH3 = styled.h3`
   margin: 90px 0 20px 0;
   font-size: 25px;
   font-weight: bold;
-`
+`;
+
 const ComponentText = styled.p`
   line-height: 1.7;
   margin-bottom: 40px;
@@ -103,18 +105,19 @@ const ComponentText = styled.p`
   &:first-child {
     margin-bottom: 15px;
   }
-`
+`;
+
 const Code = styled.code`
   padding: 3px;
   font-size: 15px;
   font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
   color: #1a1a1a;
   background-color: #ffe56433;
-`
+`;
 
 const Strong = styled.strong`
   font-weight: bold;
-`
+`;
 
 const TxtLink = styled(Link)`
   background-color: #bbeffd4d;
@@ -122,20 +125,21 @@ const TxtLink = styled(Link)`
   &:hover {
     background-color: #bbeffd;
   }
-`
+`;
+
 const ButtonSection = styled.section`
   padding: 45px 0;
   text-align: center;
   background-color: #282c34;
   color: white;
-`
+`;
 
 const FooterUl = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 0 20px 40px;
   background-color: #20232a;
-`
+`;
 
 const FooterLi = styled.li`
   display: flex;
@@ -147,7 +151,7 @@ const FooterLi = styled.li`
   &:first-child {
     grid-row: 1 / 3;
   }
-`
+`;
 
 const FooterLink = styled(Link)`
   color: white;
@@ -156,12 +160,12 @@ const FooterLink = styled(Link)`
     color: #61dafb;
     transition: 0.2s;
   }
-`
+`;
 
 const FooterSpan = styled.span`
   font-size: 16px;
   margin-top: 15px;
-`
+`;
 
 function MainSection() {
   return (
@@ -171,7 +175,7 @@ function MainSection() {
       <BlueButton to="">시작하기</BlueButton>
       <TxtButton to="">자습서 읽어보기</TxtButton>
     </DivStyle>
-  )
+  );
 }
 
 function InfoSection() {
@@ -214,7 +218,7 @@ function InfoSection() {
         </InfoText>
       </InfoLi>
     </InfoUl>
-  )
+  );
 }
 
 function ExSection() {
@@ -261,7 +265,7 @@ function ExSection() {
         사용해 <Code>&lt;textarea&gt;</Code>의 값을 실시간으로 변환합니다.
       </ComponentText>
     </>
-  )
+  );
 }
 
 function Footer() {
@@ -312,7 +316,7 @@ function Footer() {
         <FooterLink href="javascript:void(0)">Terms</FooterLink>
       </FooterLi>
     </FooterUl>
-  )
+  );
 }
 
 export default function Main() {
@@ -330,5 +334,5 @@ export default function Main() {
 
       <Footer />
     </>
-  )
+  );
 }
